@@ -1,0 +1,150 @@
+Site_of_Origin,Diagnosis,Tumor_type_forComment
+Bone,Chondrosarcoma,Other
+Bone,Chordoma,Other
+Bone,Ewing Sarcoma,Other
+Bone,Giant Cell Tumor of Bone,Other
+Bone,Osteosarcoma,Other
+Brain,Anaplastic Astrocytoma,Glioma
+Brain,Astrocytoma,Glioma
+Brain,Choroid Plexus Tumor,Other
+Brain,Craniopharyngioma,Craniopharyngioma
+Brain,Ependymoma,Other
+Brain,Ganglioglioma,Other
+Brain,Germinoma,Other
+Brain,Glioblastoma,Glioma
+Brain,Glioma,Glioma
+Brain,Medulloblastoma,Medulloblastoma
+Brain,Meningioma,Other
+Brain,Oligodendroglioma,Glioma
+Brain,Pilocytic Astrocytoma,Glioma
+Brain,Pineal Tumor,Other
+Brain,Pituicytoma,Other
+Brain,Pituitary Adenoma,Other
+Brain,Pituitary Carcinoma,Other
+Brain,Pleomorphic Xanthoastrocytoma,Glioma
+Breast,Breast Angiosarcoma,Other
+Breast,Breast Ductal Carcinoma In Situ,Breast Carcinoma
+Breast,Breast Fibroepithelial Neoplasms,Other
+Breast,Breast Invasive Ductal Carcinoma,Breast Carcinoma
+Breast,Breast Invasive Lobular Carcinoma,Breast Carcinoma
+Breast,Breast Lobular Carcinoma In Situ,Breast Carcinoma
+Breast,Breast Mixed Ductal and Lobular Carcinoma,Breast Carcinoma
+Breast,Breast Sarcoma,Other
+Breast,Metaplastic Breast Cancer,Other
+Colorectal,Colorectal Adenocarcinoma,Colorectal Adenocarcinoma
+Colorectal,Gastrointestinal Neuroendocrine Tumors,Other
+Colorectal,Tubular Adenoma of the Colon,Other
+Esophagus,Esophageal Adenocarcinoma,Other
+Esophagus,Esophageal Squamous Cell Carcinoma,Other
+Esophagus,Mucosal Melanoma of the Esophagus,Other
+Head and Neck,Head and Neck Mucosal Melanoma,Melanoma
+Head and Neck,Head and Neck Squamous Cell Carcinoma,Other
+Head and Neck,Sinonasal Adenocarcinoma,Other
+Hepatobiliary,Ampullary Carcinoma,Other
+Hepatobiliary,Cholangiocarcinoma,Cholangiocarcinoma
+Hepatobiliary,Gallbladder Adenocarcinoma,Other
+Hepatobiliary,Hepatocellular Carcinoma,Other
+Hepatobiliary,Hepatocellular Carcinoma plus Intrahepatic Cholangiocarcinoma,Other
+Kidney,Renal Cell Carcinoma,Other
+Kidney,Renal Neuroendocrine Tumor,Other
+Kidney,Wilms' Tumor,Other
+Lung,Lung Adenocarcinoma,Lung Adenocarcinoma
+Lung,Lung Carcinoid,Other
+Lung,Lung Neuroendocrine Tumor,Other
+Lung,Lung Squamous Cell Carcinoma,Other
+Lung,Non-Small Cell Lung Cancer,Lung Adenocarcinoma
+Lung,Sarcomatoid Carcinoma of the Lung,Other
+Lung,Small Cell Lung Cancer,Other
+Ovary_Fallopian Tube,Brenner Tumor,Other
+Ovary_Fallopian Tube,Dysgerminoma,Other
+Ovary_Fallopian Tube,Embryonal Carcinoma,Other
+Ovary_Fallopian Tube,Endometrioid Ovarian Cancer,Other
+Ovary_Fallopian Tube,High-Grade Serous Ovarian Cancer,Other
+Ovary_Fallopian Tube,Immature Teratoma,Other
+Ovary_Fallopian Tube,Low-Grade Serous Ovarian Cancer,Other
+Ovary_Fallopian Tube,Mature Teratoma,Other
+Ovary_Fallopian Tube,Mixed Germ Cell Tumor,Other
+Ovary_Fallopian Tube,Mucinous Borderline Ovarian Tumor,Other
+Ovary_Fallopian Tube,Mucinous Ovarian Cancer,Other
+Ovary_Fallopian Tube,Serous Borderline Ovarian Tumor,Other
+Ovary_Fallopian Tube,Sex Cord Stromal Tumor,Other
+Ovary_Fallopian Tube,Yolk Sac Tumor,Other
+Pancreas,Acinar Cell Carcinoma,Other
+Pancreas,Intraductal Papillary Mucinous Neoplasm,Other
+Pancreas,Mucinous Cystic Neoplasm,Other
+Pancreas,Pancreatic Adenocarcinoma,Pancreatic Adenocarcinoma
+Pancreas,Pancreatic Neuroendocrine Tumor,Other
+Pancreas,Pancreatoblastoma,Other
+Pancreas,Serous Cystadenoma of the Pancreas,Other
+Pancreas,Solid Pseudopapillary Neoplasm of the Pancreas,Other
+Parathyroid,Parathyroid Cancer,Other
+Penis,Penile Squamous Cell Carcinoma,Other
+Peritoneum,Peritoneal Mesothelioma,Other
+Peritoneum,Peritoneal Serous Carcinoma,Other
+Pleura,Pleural Mesothelioma,Other
+Prostate,Prostate Adenocarcinoma,Other
+Salivary Gland,Acinic Cell Carcinoma,Other
+Salivary Gland,Adenoid Cystic Carcinoma,Other
+Salivary Gland,Mucoepidermoid Carcinoma,Other
+Salivary Gland,Salivary Duct Carcinoma,Other
+Skin,Basal Cell Carcinoma,Other
+Skin,Melanoma,Melanoma
+Skin,Merkel Cell Carcinoma,Other
+Skin,Microcystic Adnexal Carcinoma,Other
+Skin,Porocarcinoma/Spiroadenocarcinoma,Other
+Skin,Squamous Cell Carcinoma,Other
+Small Bowel,Gastrointestinal Neuroendocrine Tumors,Other
+Soft Tissue,Alveolar Rhabdomyosarcoma,Other
+Soft Tissue,Angiosarcoma,Other
+Soft Tissue,Dermatofibrosarcoma Protuberans,Other
+Soft Tissue,Embryonal Rhabdomyosarcoma,Other
+Soft Tissue,Fibrosarcoma,Other
+Soft Tissue,Hemangioma,Other
+Soft Tissue,Inflammatory Myofibroblastic Tumor,Other
+Soft Tissue,Liposarcoma,Other
+Soft Tissue,Low-Grade Fibromyxoid Sarcoma,Other
+Soft Tissue,Malignant Peripheral Nerve Sheath Tumor,Other
+Soft Tissue,Myxofibrosarcoma,Other
+Soft Tissue,Neurofibroma,Other
+Soft Tissue,Primitive Neuroectodermal Tumor,Other
+Soft Tissue,Sarcoma,Other
+Soft Tissue,Solitary Fibrous Tumor/Hemangiopericytoma,Other
+Soft Tissue,Synovial Sarcoma,Other
+Soft Tissue,Undifferentiated Pleomorphic Sarcoma/Malignant Fibrous Histiocytoma/High-Grade Spindle Cell Sarcoma,Other
+Stomach,Gastric Adenocarcinoma,Other
+Stomach,Gastrointestinal Neuroendocrine Tumors,Other
+Stomach,Gastrointestinal Stromal Tumor,GIST
+Stomach,Signet Ring Cell Carcinoma of the Stomach,Other
+Testes,Embryonal Carcinoma,Other
+Testes,Malignant Teratoma,Other
+Testes,Mixed Germ Cell Tumor,Other
+Testes,Seminoma,Germ cell tumor
+Testes,Sex Cord Stromal Tumor,Other
+Testes,Testicular Lymphoma,Other
+Testes,Yolk Sac Tumor,Other
+Thymus,Thymic Carcinoma,Other
+Thyroid,Anaplastic Thyroid Cancer,Papillary thyroid carcinoma
+Thyroid,Follicular Thyroid Cancer,Other
+Thyroid,Hurthle Cell Thyroid Cancer,Other
+Thyroid,Medullary Thyroid Cancer,Other
+Thyroid,Papillary Thyroid Cancer,Papillary thyroid carcinoma
+Unknown,Adenocarcinoma,Other
+Unknown,Cancer of Unknown Primary,Other
+Unknown,Melanoma of Unknown Primary,Other
+Unknown,Neuroendocrine Tumor,Other
+Unknown,Poorly Differentiated Carcinoma,Other
+Unknown,Sarcoma,Other
+Unknown,Squamous Cell Carcinoma,Other
+Uterus_Endometrium,Choriocarcinoma,Other
+Uterus_Endometrium,Endometrial Stromal Sarcoma,Other
+Uterus_Endometrium,Other Uterine Tumor,Other
+Uterus_Endometrium,Uterine Carcinosarcoma/Uterine Malignant Mixed Mullerian Tumor,Other
+Uterus_Endometrium,Uterine Clear Cell Carcinoma,Other
+Uterus_Endometrium,Uterine Endometrioid Carcinoma,Other
+Uterus_Endometrium,Uterine Leiomyoma,Other
+Uterus_Endometrium,Uterine Leiomyosarcoma,Other
+Uterus_Endometrium,Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma,Other
+Vagina_Vulva,Extramammary Paget Disease,Other
+Vagina_Vulva,Mucosal Melanoma of the Vulva/Vagina,Other
+Vagina_Vulva,Squamous Cell Carcinoma of the Vulva/Vagina,Other
+Free text input,Free text input,Other

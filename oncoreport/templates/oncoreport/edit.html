@@ -1,0 +1,125 @@
+{% load static %}
+ 
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>--> <!--Doesnt work for tooltip, works only for edit button-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>                                         
+    <script src ="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--tooltip bootstrap for freq showing-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--tooltip bootstrap for freq showing--> 
+</head>
+
+<div class="col-md-12"> 
+ <form method="POST" class="post-form" action="/update/{{allaberrations.id}}">  
+   {% csrf_token %}  
+  <div class="container">  
+ <br>  
+  <div class="form-group row">  
+  <label class="col-sm-1 col-form-label"></label>  
+  <div class="col-sm-4">  
+  <h3>Update Details</h3>  
+  </div>  
+   </div>  
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">ID:</label>  
+  <div class="col-sm-4">  
+   <input type="text" class="form-control" name="id" id="id_id" readonly required maxlength="20" value="{{ allaberrations.id }}"/>  
+  </div>  
+   </div>  
+   <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Sample:</label>  
+    <div class="col-sm-4">  
+     <input type="text" class="form-control" name="sample" id="id_sample" required maxlength="255" value="{{ allaberrations.sample }}" />  
+    </div>  
+     </div>  
+    <div class="form-group row">  
+     <label class="col-sm-2 col-form-label">Gene:</label>  
+     <div class="col-sm-4">  
+     <input type="text" class="form-control" name="gene" id="id_gene" required maxlength="255" value="{{ allaberrations.gene }}" />  
+    </div>  
+    </div>  
+   <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Variant:</label>  
+  <div class="col-sm-4">  
+   <input type="text" class="form-control" name="variants" id="id_variants" required maxlength="255" value="{{ allaberrations.variants }}" />  
+  </div>  
+   </div>  
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Tier:</label>  
+  <div class="col-sm-4">  
+   <input type="text" class="form-control" name="tier" id="id_tier" required maxlength="255" value="{{ allaberrations.tier }}" />  
+  </div>  
+   </div>  
+  <div class="form-group row">  
+  <label class="col-sm-2 col-form-label">Variant_Type:</label>  
+  <div class="col-sm-4">  
+   <input type="text" class="form-control" name="variant_type" id="id_variant_type" required maxlength="255" value="{{ allaberrations.variant_type }}" />  
+  </div>  
+   </div>
+   <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Variant Allele Frequency(%):</label>  
+    <div class="col-sm-4">  
+     <input type="text" class="form-control" name="vaf" id="id_vaf" required maxlength="255" value="{{ allaberrations.vaf }}" />  
+    </div>  
+     </div>
+     <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Depth:</label>  
+        <div class="col-sm-4">  
+         <input type="text" class="form-control" name="depth" id="id_depth" required maxlength="255" value="{{ allaberrations.depth }}" />  
+        </div>  
+         </div>
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Transcript:</label>  
+        <div class="col-sm-4">  
+            <input type="text" class="form-control" name="transcript" id="id_transcript" required maxlength="255" value="{{ allaberrations.transcript }}" />  
+        </div>  
+    </div>
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Locus:</label>  
+        <div class="col-sm-4">  
+            <input type="text" class="form-control" name="locus" id="id_locus" required maxlength="255" value="{{ allaberrations.locus }}" />  
+        </div>  
+    </div>
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Exon:</label>  
+        <div class="col-sm-4">  
+            <input type="text" class="form-control" name="exon" id="id_exon" required maxlength="255" value="{{ allaberrations.exon }}" />  
+        </div>  
+    </div>
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Copy.number:</label>  
+        <div class="col-sm-4">  
+            <input type="text" class="form-control" name="copy_number" id="id_copy_number" required maxlength="255" value="{{ allaberrations.copy_number }}" />  
+        </div>  
+    </div>
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">Variant(PMKB):</label>  
+        <div class="col-sm-4">  
+            <input type="text" class="form-control" name="variant_pmkb" id="id_variant_pmkb" required maxlength="255" value="{{ allaberrations.variant_pmkb }}" />  
+        </div>  
+    </div>
+    <div class="form-group row">  
+        <label class="col-sm-2 col-form-label">PMKB_TumorType:</label>  
+        <div class="col-sm-4">  
+            <input type="text" class="form-control" name="pmkb_tumortype" id="id_pmkb_tumortype" required maxlength="255" value="{{ allaberrations.pmkb_tumortype }}" />  
+        </div>  
+    </div>
+
+  <div class="form-group row">  
+  <label class="col-sm-1 col-form-label"></label>  
+  <div class="col-sm-4">  
+  <button type="submit" class="btn btn-success btn-lg">Update</button>  
+  </div>  
+   </div>  
+  </div>  
+ </form>  
+</html>

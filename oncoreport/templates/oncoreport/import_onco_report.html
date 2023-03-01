@@ -1,0 +1,79 @@
+{% load static %}
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>                                         
+    <script src ="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script> 
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.html5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--tooltip bootstrap for showing freq-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--tooltip bootstrap for showing freq-->                      
+
+    </head>
+
+<style>
+    select option[disabled] {
+    display: none;
+}
+</style>
+
+<body style="font-family:Arial;margin: 50px;">
+
+  <form action="{% url 'search_sample_tumortype' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+      <h4 style="background-color:#0059b3;color:White">SPECIMEN </h4>
+      <b><label for="tumorsample">Tumor sample: </label></b>
+      <select name ="Sample" id="samplesDropdown">
+        <option selected="selected" disabled>Sample</option>
+        <option value="Any">Any</option>
+        {% for sample in samples %}
+        <option value="{{ sample }}">{{ sample }}</option>
+        {% endfor %}
+      </select><br/><br/>
+      
+<!-- https://jsfiddle.net/7zfo93bh/ for the dropdown reference -->
+      <b><label for="site_of_origin">Site of Origin: </label></b>
+        <select name="siteDropdown" id="siteDropdown">
+          <option value="Select">Select</option>
+          {% for key, value in site_diagnosis_dict.items %}
+          <option value="{{ key }}">{{ key }}</option>
+          {% endfor %}
+        </select>
+  
+        <b><label for="diagnosis">Diagnosis: </label></b>
+        <select  name="diagnosisDropdown" id="diagnosisDropdown">
+          <option value="Select">Select</option>
+            {% for key, value in site_diagnosis_dict.items %}
+                {% for values in value %}
+                    <option class="{{ key }}" value="{{ values }}">{{ values }}</option>
+                {% endfor %}
+            {% endfor %}
+        </select><br/><br/>
+
+      <input type="submit" value="search" style="border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;" />
+
+      </form>
+    <hr>
+      <form method="POST" action='/'> 
+      {% csrf_token %}
+      <input type="submit" value="Home"/>
+    </form>
+
+
+    <script>
+        jQuery(document).ready(function($){
+            $('#siteDropdown').on('change', function(e){
+                var className = e.target.value;
+                $('#diagnosisDropdown option').prop('disabled', true);
+                $('#diagnosisDropdown').find('option.' + className).prop('disabled', false);
+                });
+            });
+
+    </script>
+</body>
+</html>
